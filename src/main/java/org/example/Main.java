@@ -29,9 +29,10 @@ public class Main
         char[] expectedChars = {'N', 'F', 'L', 'C'};
 
         //for (Product product : products)
+        char firstChar;
         for (int i = 0; i < products.length; i++)
         {
-            char firstChar = products[i].getManufacturer().charAt(0);
+            firstChar = products[i].getManufacturer().charAt(0);
             System.out.println(firstChar);
             Assertions.assertEquals(firstChar, expectedChars[i]);
         }
